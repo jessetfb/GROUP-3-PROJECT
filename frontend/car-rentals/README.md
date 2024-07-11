@@ -4,7 +4,7 @@
 
 ## Promo
 
-[RentCars - Your Ultimate Car Rental Solution! Explore a wide range of rental cars, stay organized, and boost your travel experience with RentCars.](https://iryna-vyshniak.github.io/rent-cars-react/)
+[RentCars - Your Ultimate Car Rental Solution! Explore a wide range of rental cars, stay organized, and boost your travel experience with RentCars.]
 
 ---
 
@@ -25,17 +25,9 @@ preferences.
 ### Demo
 
 You can access the live _demo_ of the application
-[here](https://iryna-vyshniak.github.io/rent-cars-react/).
+[here]
 
 ### Features
-
-- View a catalog of cars available for rent.
-- Filter cars by make, rental price, and mileage.
-- Add cars to your favorites.
-- View detailed information about each car.
-- Contact the rental company via phone.
-- Responsive design for various screen sizes.
-- Dark mode support.
 
 ### Getting Started
 
@@ -57,8 +49,7 @@ To get started with the project, follow these steps:
 
 `npm run dev`
 
-5. Open your web browser and navigate to `http://localhost:5173/rent-cars-react` to access the
-   application.
+5. Open your web browser and navigate to
 
 ### Usage
 
@@ -71,17 +62,7 @@ To get started with the project, follow these steps:
 ### Technologies
 
 - React
-- React Router
-- Redux Axios
-- Tailwind
-- MockAPI for data
 
 ### Contributing
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with descriptive commit messages.
-4. Push your changes to your fork.
-5. Open a pull request to the main repository.
