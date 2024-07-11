@@ -1,5 +1,5 @@
-import { carImages } from '../../shared/data';
-import MainTitle from '../MainTitle';
+import { carImages } from "../../shared/data";
+import MainTitle from "../MainTitle";
 
 const Cars = () => {
   return (
@@ -9,11 +9,16 @@ const Cars = () => {
           Drive Your Dreams
         </MainTitle>
         <p className="modal-second-title text-[16px]">
-          At <span className="font-semibold text-accent-color dark:text-white"> RentCars</span>,
-          we`re not just a car rental service; we`re your ticket to unforgettable experiences,
-          adventures, and memories waiting to be created. Whether you`re a solo traveler, exploring
-          with family and friends, or on a business trip, we have the perfect vehicle to suit your
-          needs.
+          At{" "}
+          <span className="font-semibold text-accent-color dark:text-white">
+            {" "}
+            RentCars
+          </span>
+          , we`re not just a car rental service; we`re your ticket to
+          unforgettable experiences, adventures, and memories waiting to be
+          created. Whether you`re a solo traveler, exploring with family and
+          friends, or on a business trip, we have the perfect vehicle to suit
+          your needs.
         </p>
       </div>
 
@@ -25,8 +30,8 @@ const Cars = () => {
             alt={image.alt}
             className={
               index === 1
-                ? 'row-span-2 h-full w-full rounded-2xl object-cover shadow-2xl'
-                : 'h-full w-full rounded-2xl object-cover'
+                ? "row-span-2 h-full w-full rounded-2xl object-cover shadow-2xl"
+                : "h-full w-full rounded-2xl object-cover"
             }
             loading="lazy"
           />
