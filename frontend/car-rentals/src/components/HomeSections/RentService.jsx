@@ -24,7 +24,7 @@ const RentService = () => {
             limitations of public transportation and embrace the freedom of the
             open road with our top-notch car rental services! At{" "}
             <span className="text-accent-color">RentCars</span>, we`re dedicated
-            to making your travel experiences unforgettable.
+            to making your travel experiences unforgettable..
           </p>
         </div>
 
