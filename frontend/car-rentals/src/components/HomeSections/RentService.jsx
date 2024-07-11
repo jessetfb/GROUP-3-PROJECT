@@ -26,7 +26,6 @@ const RentService = () => {
             <span className="text-accent-color">RentCars</span>, we`re dedicated
             to making your travel experiences unforgettable.
           </p>
-          <img src={Sgn} alt="signin" className="drop-shadow-2xl" />
         </div>
 
         <div className="w-full lg:w-3/5">
