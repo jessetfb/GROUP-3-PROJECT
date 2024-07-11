@@ -1,12 +1,15 @@
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
 
-import { carSlides } from '../../shared/data';
-import { useSlide } from '../../shared/hooks';
+import { carSlides } from "../../shared/data";
+import { useSlide } from "../../shared/hooks";
 
 const ImageSlider = () => {
   const slideCount = carSlides.length;
-  const { currentIndex, prevSlide, nextSlide, goToSlide } = useSlide(0, slideCount);
+  const { currentIndex, prevSlide, nextSlide, goToSlide } = useSlide(
+    0,
+    slideCount
+  );
 
   return (
     <section className="group relative m-auto mb-8 mt-20 h-[580px] w-full max-w-[1140px] px-4 py-16">
@@ -37,5 +40,5 @@ const ImageSlider = () => {
     </section>
   );
 };
-
+//
 export default ImageSlider;
