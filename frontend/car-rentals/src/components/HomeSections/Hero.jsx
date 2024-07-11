@@ -20,7 +20,7 @@ const Hero = () => {
           to="/catalog"
           className="small-button cursor-pointer px-2 text-center"
         >
-          Uusijiangushe
+          Uusijiangushe.
         </Link>
       </div>
     </section>
