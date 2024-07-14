@@ -1,15 +1,12 @@
 from flask_restful import Resource, reqparse
 from flask import jsonify, request, make_response
-
 from models import db, Review
+from flask_jwt_extended import jwt_required
 
-#authorization
-@app.before_request
-def check_if_logged_in():
-    if not session ['user_id']:
-        return {'error': 'Unauthorized'}, 401
+
     
 class ReviewResource(Resource):
+    @jwt_required
     def get(self, id=None):
         if id:
             review = Review.query.filter_by(id=id).first()
@@ -23,6 +20,7 @@ class ReviewResource(Resource):
             response = make_response(jsonify(reviews), 200)
             return response
         
+    @jwt_required
     def post(self):
         data = request.get_json()
         

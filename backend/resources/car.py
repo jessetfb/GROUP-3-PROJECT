@@ -1,15 +1,9 @@
 from flask_restful import Resource, reqparse
 from flask import Flask, jsonify, request, make_response
-from sqlalchemy import and_, not_
-
 from models import db, Car
+from flask_jwt_extended import jwt_required
 
-#authorization
-@app.before_request
-def check_if_logged_in():
-    if not session ['user_id']\
-        and request.endpoint != 'car_list' :
-        return {'error': 'Unauthorized'}, 401
+
     
 class CarResource(Resource):
     def get(self, id=None):
@@ -24,6 +18,7 @@ class CarResource(Resource):
             cars = [n.to_dict() for n in Car.query.all()]
             response = make_response(jsonify(cars), 200)
             return response
+    @jwt_required
     def post(self):
        data = request.get_json() 
        
