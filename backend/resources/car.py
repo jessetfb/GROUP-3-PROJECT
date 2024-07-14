@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request, make_response
 from models import db, Car
 from flask_jwt_extended import jwt_required
 
-
+    
     
 class CarResource(Resource):
     def get(self, id=None):
@@ -18,6 +18,7 @@ class CarResource(Resource):
             cars = [n.to_dict() for n in Car.query.all()]
             response = make_response(jsonify(cars), 200)
             return response
+        
     @jwt_required
     def post(self):
        data = request.get_json() 
