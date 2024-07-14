@@ -11,6 +11,12 @@ parser.add_argument('cost', type=int, required=True, help='Cost is required')
 parser.add_argument('start_date', type=str, required=True, help='Start date is required (ISO format)')
 parser.add_argument('end_date', type=str, required=True, help='End date is required (ISO format)')
 
+#authorization
+@app.before_request
+def check_if_logged_in():
+    if not session ['user_id']:
+        return {'error': 'Unauthorized'}, 401
+    
 class BookingsResource(Resource):
     def get(self, id=None):
         if id:

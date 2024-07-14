@@ -4,6 +4,13 @@ from sqlalchemy import and_, not_
 
 from models import db, Car
 
+#authorization
+@app.before_request
+def check_if_logged_in():
+    if not session ['user_id']\
+        and request.endpoint != 'car_list' :
+        return {'error': 'Unauthorized'}, 401
+    
 class CarResource(Resource):
     def get(self, id=None):
         if id:

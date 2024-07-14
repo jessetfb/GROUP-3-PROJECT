@@ -3,6 +3,12 @@ from flask import jsonify, request, make_response
 
 from models import db, Review
 
+#authorization
+@app.before_request
+def check_if_logged_in():
+    if not session ['user_id']:
+        return {'error': 'Unauthorized'}, 401
+    
 class ReviewResource(Resource):
     def get(self, id=None):
         if id:
