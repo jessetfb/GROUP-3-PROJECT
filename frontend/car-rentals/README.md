@@ -4,7 +4,7 @@
 
 ## Promo
 
-[RentCars - Your Ultimate Car Rental Solution! Explore a wide range of rental cars, stay organized, and boost your travel experience with RentCars.]
+aRentCars - Your Ultimat e Car Rental Solution! Explore a wide range of rental cars, stay organized, and boost your travel experience with RentCars.
 
 ---
 
@@ -25,7 +25,6 @@ preferences.
 ### Demo
 
 You can access the live _demo_ of the application
-[here]
 
 ### Features
 
@@ -35,7 +34,7 @@ To get started with the project, follow these steps:
 
 1. Clone this repository to your local machine:
 
-`git clone` <repository-url>
+`git clone` <>
 
 2. Change directory to the project folder:
 
@@ -63,6 +62,4 @@ To get started with the project, follow these steps:
 
 - React
 
-### Contributing
-
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+###
