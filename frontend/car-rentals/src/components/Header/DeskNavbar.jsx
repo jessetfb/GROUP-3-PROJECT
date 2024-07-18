@@ -1,11 +1,11 @@
-import Logo from '../Logo';
+import Logo from "../Logo";
 
-import NavMenu from './NavMenu';
+import NavMenu from "./NavMenu";
 
 const DeskNavbar = () => {
   return (
     <div className="navbar">
-      <Logo text="RentCars" classText="logo-text" />
+      <Logo text="RentCars" classText="" />
       <NavMenu className="navbar-links" />
     </div>
   );

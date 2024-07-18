@@ -1,15 +1,17 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import Logo from '../Logo';
+import Logo from "../Logo";
 
-import Button from '../Button';
+import Button from "../Button";
 
-import NavMenu from './NavMenu';
+import NavMenu from "./NavMenu";
 
 const MobileNavbar = ({ navbar, openNav }) => {
   return (
-    <div className={`mobile-navbar dark:bg-slate-800 ${navbar ? 'open-nav' : ''}`}>
-      <Logo className="absolute inset-x-0 bottom-3 z-[60]" />
+    <div
+      className={`mobile-navbar dark:bg-slate-800 ${navbar ? "open-nav" : ""}`}
+    >
+      <Logo className="" />
       <Button
         onClick={openNav}
         svgClass="mobile-navbar-close"
@@ -24,7 +26,7 @@ const MobileNavbar = ({ navbar, openNav }) => {
 
 MobileNavbar.propTypes = {
   navbar: PropTypes.bool,
-  openNav: PropTypes.func
+  openNav: PropTypes.func,
 };
 
 export default MobileNavbar;
