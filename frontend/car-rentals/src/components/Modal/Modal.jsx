@@ -1,33 +1,33 @@
-import { useCallback, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { createPortal } from 'react-dom';
+import { useCallback, useEffect } from "react";
+import PropTypes from "prop-types";
+import { createPortal } from "react-dom";
 
-import { handleClose } from '../../shared/utils';
-import Button from '../Button';
+import { handleClose } from "../../shared/utils";
+import Button from "../Button";
 
-const modalContainer = document.getElementById('modal');
+const modalContainer = document.getElementById("modal");
 
 const Modal = ({ onClose, children, isOpen }) => {
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'visible';
+      document.body.style.overflow = "visible";
     }
   }, [isOpen]);
 
   const handleModalClose = useCallback(
-    e => {
-      document.body.style.overflow = 'visible';
+    (e) => {
+      document.body.style.overflow = "visible";
       handleClose(e, onClose);
     },
     [onClose]
   );
 
   useEffect(() => {
-    document.body.addEventListener('keydown', handleModalClose);
+    document.body.addEventListener("keydown", handleModalClose);
 
-    return () => document.body.removeEventListener('keydown', handleModalClose);
+    return () => document.body.removeEventListener("keydown", handleModalClose);
   }, [handleModalClose]);
 
   return createPortal(
@@ -50,7 +50,7 @@ const Modal = ({ onClose, children, isOpen }) => {
 Modal.propTypes = {
   children: PropTypes.node.isRequired,
   onClose: PropTypes.func.isRequired,
-  isOpen: PropTypes.bool
+  isOpen: PropTypes.bool,
 };
-
+//
 export default Modal;
