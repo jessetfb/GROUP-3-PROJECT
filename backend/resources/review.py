@@ -25,7 +25,7 @@ class ReviewResource(Resource):
                 user_id=data['user_id'],
                 car_id=data['car_id'],
                 rating=data['rating'],
-                comment=data.get('comment')  # comment is optional
+                comment=data.get('comment')  
             )
             db.session.add(new_review)
             db.session.commit()

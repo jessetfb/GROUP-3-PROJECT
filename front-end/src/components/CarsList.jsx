@@ -45,7 +45,8 @@ function CarsList({ searchTerm}) {
         {filteredCars.length > 0 ? (
           filteredCars.map((car) => (
             <Col key={car.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
-              <CarCard 
+              <CarCard
+                id = {car.id}
                 name={car.name}
                 current_location={car.current_location}
                 cost={car.cost}
