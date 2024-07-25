@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
-import NavBar from './Navbar';
+import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import NavBar from "./Navbar";
 
 function Layout() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <>
