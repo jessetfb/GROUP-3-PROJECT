@@ -3,7 +3,6 @@ from flask import request, make_response, jsonify
 from sqlalchemy import func
 from datetime import datetime
 from models import db, Booking
-from flask_jwt_extended import jwt_required
 
 parser = reqparse.RequestParser()
 parser.add_argument('user_id', type=int, required=True, help='User ID is required')
@@ -12,9 +11,7 @@ parser.add_argument('cost', type=int, required=True, help='Cost is required')
 parser.add_argument('start_date', type=str, required=True, help='Start date is required (ISO format)')
 parser.add_argument('end_date', type=str, required=True, help='End date is required (ISO format)')
 
-    
 class BookingsResource(Resource):
-    @jwt_required
     def get(self, id=None):
         if id:
             booking = Booking.query.filter_by(id=id).first()
@@ -28,14 +25,12 @@ class BookingsResource(Resource):
             response = make_response(jsonify(bookings), 200)
             return response
         
-    @jwt_required
     def delete(self, id):
         booking = Booking.query.get_or_404(id)
         db.session.delete(booking)
         db.session.commit()
         return jsonify({'message': 'Booking deleted'})
-    
-    @jwt_required
+
     def put(self, id):
         booking = Booking.query.get_or_404(id)
         args = parser.parse_args()
@@ -48,8 +43,6 @@ class BookingsResource(Resource):
         
         db.session.commit()
         return jsonify({'message': 'Booking updated'})
-    
-    @jwt_required
     def post(self):
         args = parser.parse_args()
         
@@ -68,6 +61,3 @@ class BookingsResource(Resource):
     
     
     
-
-
-

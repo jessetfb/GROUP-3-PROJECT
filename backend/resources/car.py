@@ -1,10 +1,9 @@
 from flask_restful import Resource, reqparse
 from flask import Flask, jsonify, request, make_response
-from models import db, Car
-from flask_jwt_extended import jwt_required
+from sqlalchemy import and_, not_
 
-    
-    
+from models import db, Car
+
 class CarResource(Resource):
     def get(self, id=None):
         if id:
@@ -18,8 +17,6 @@ class CarResource(Resource):
             cars = [n.to_dict() for n in Car.query.all()]
             response = make_response(jsonify(cars), 200)
             return response
-        
-    @jwt_required
     def post(self):
        data = request.get_json() 
        
@@ -27,11 +24,7 @@ class CarResource(Resource):
            name = data['name'],
            description = data ['description'],
            current_location = data['current_location'],
-           status = data['status'],
-           mileage = data['mileage'],
-           fuel_type = data['fuel_type'],
-           horse_power = data['horse_power'],
-           transmission= data['transmission'],
+           imageURL = data['imageURL'],
            cost = data['cost']
        )
        
