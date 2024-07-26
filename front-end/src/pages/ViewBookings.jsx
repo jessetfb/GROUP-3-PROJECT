@@ -84,5 +84,4 @@ function Bookings() {
   );
 }
 
-export default Bookings;
-l
+export default Bookings
