@@ -1,13 +1,8 @@
-import React from 'react'
-import { Button } from 'react-bootstrap'
+import React from "react";
+import { Button } from "react-bootstrap";
 
 function Bookings() {
-  return (
-    <Button>
-      
-    </Button>
-    
-  )
+  return <Button></Button>;
 }
 
-export default Bookings
+export default Bookings;
