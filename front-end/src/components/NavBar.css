@@ -1,0 +1,51 @@
+.navbar-custom {
+  background: url("https://i.pinimg.com/736x/01/e9/26/01e926293bbee57db5fd5d45dd1d5969.jpg")
+    no-repeat center center; /* Background image */
+  background-size: cover; /* Cover the entire navbar */
+  padding: 1rem 2rem;
+}
+
+.navbar-title {
+  color: #ffc107; /* Yellow color for the title */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-logo {
+  max-width: 50px;
+  vertical-align: middle;
+}
+
+.nav-link-custom {
+  color: #e6e213 !important;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+
+.nav-link-custom:hover {
+  color: grey !important;
+}
+
+.search-input {
+  background-color: #333333;
+  border: 1px solid #444444;
+  color: grey;
+}
+
+.search-input::placeholder {
+  color: #b3b3b3;
+}
+
+.search-button {
+  background-color: #ffc107; /* Yellow color for the button */
+  border-color: #ffc107;
+  color: #141414;
+}
+
+.search-button:hover {
+  background-color: #ffcd39; /* Lighter yellow on hover */
+  border-color: #ffcd39;
+}
