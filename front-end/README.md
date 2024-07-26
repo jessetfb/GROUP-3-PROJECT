@@ -1,8 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Title: Car Rental Hub
+================
 
-Currently, two official plugins are available:
+# Authors
+* Aloice Ogana
+* Jesse Langat
+* Matilda Kasiva
+* Edward Koiai
+* Jordan Barani
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+The project aims to create a platform that enables users to rent vehicles anytime.
+The user can perform the following functions: 
+    - As a user, I can view detailed vehicle listings with photos, descriptions, and rental cost
+    - As a user, I can experience secure authentication 
+    - As a user, I can log in for an account, book cars, delete cars and log out from the account.
+The team has plans to improve the app. The plans will be implemented at a later date.
+ 
+## Installation
+### Prerequisites
+* Python
+* Vite app
+* Tailwind
+
+## Project Set up
+* Clone the repository.
+* Install the backend and frontend dependencies
+* Run the deployment server
+
+### API Endpoints
+* /cars
+* /booking
+* /review
+
+License
+This project is licensed under the MIT License. See LICENSE for details.
+
