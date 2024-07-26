@@ -1,0 +1,56 @@
+.navbar-custom {
+  background: url("your-background-image-url.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 1rem 2rem;
+}
+
+.navbar-title {
+  color: #ffc107; /* Yellow color for the title */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-logo {
+  max-width: 50px;
+  vertical-align: middle;
+}
+
+.nav-link-custom {
+  color: #e5e5e5 !important;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+
+.nav-link-custom:hover {
+  color: #ffffff !important;
+}
+
+.search-input {
+  background-color: #333333;
+  border: 1px solid #444444;
+  color: #ffffff;
+}
+
+.search-input::placeholder {
+  color: #b3b3b3;
+}
+
+.search-button {
+  background-color: #ffc107; /* Yellow color for the button */
+  border-color: #ffc107;
+  color: #141414;
+}
+
+.search-button:hover {
+  background-color: #ffcd39; /* Lighter yellow on hover */
+  border-color: #ffcd39;
+}
+
+.layout-container {
+  background-color: #141414; /* Dark background color */
+  min-height: 100vh;
+  padding: 2rem;
+}
