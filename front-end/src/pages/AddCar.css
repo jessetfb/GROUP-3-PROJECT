@@ -1,0 +1,38 @@
+/* AddCar.css */
+.container {
+  background-color: #141414;
+  color: #dce925;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-control {
+  background-color: #eba612;
+  color: #093ac0;
+  border: 1px solid #444;
+}
+
+.form-label {
+  color: #d0dd1e;
+}
+
+.text-danger {
+  color: #e50914;
+}
+
+button {
+  background-color: #e50914;
+  border: none;
+}
+
+button:disabled {
+  background-color: #555;
+}
+
+button:hover:not(:disabled) {
+  background-color: #b81d24;
+}
+
+button:focus {
+  box-shadow: none;
+}
