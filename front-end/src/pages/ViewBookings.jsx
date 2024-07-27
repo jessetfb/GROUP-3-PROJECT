@@ -85,4 +85,3 @@ function Bookings() {
 }
 
 export default Bookings;
-l
